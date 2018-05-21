@@ -1,4 +1,4 @@
-package com.junitexercises.others;
+package com.junitexercises.ch1_5.others;
 
 import java.util.ArrayList;
 import java.util.List;

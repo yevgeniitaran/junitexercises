@@ -1,4 +1,4 @@
-package com.junitexercises.others;
+package com.junitexercises.ch1_5.others;
 
 public class FahrenheitCelciusConverter {
     public static double toFahrenheit(double celsius) {

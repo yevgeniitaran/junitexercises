@@ -1,4 +1,4 @@
-package com.junitexercises.tddpractise;
+package com.junitexercises.ch1_5.tddpractise;
 
 import java.util.ArrayList;
 import java.util.Collection;

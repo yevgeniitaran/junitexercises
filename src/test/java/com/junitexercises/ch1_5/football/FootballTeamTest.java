@@ -1,4 +1,4 @@
-package com.junitexercises.football;
+package com.junitexercises.ch1_5.football;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;

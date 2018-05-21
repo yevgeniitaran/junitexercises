@@ -1,4 +1,4 @@
-package com.junitexercises.tddpractise;
+package com.junitexercises.ch1_5.tddpractise;
 
 import junitparams.JUnitParamsRunner;
 import junitparams.Parameters;
