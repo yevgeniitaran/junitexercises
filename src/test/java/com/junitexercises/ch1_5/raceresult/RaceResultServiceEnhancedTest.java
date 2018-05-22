@@ -2,7 +2,6 @@ package com.junitexercises.ch1_5.raceresult;
 
 import org.junit.Test;
 import org.mockito.ArgumentCaptor;
-import org.mockito.Captor;
 
 import java.time.LocalDateTime;
 

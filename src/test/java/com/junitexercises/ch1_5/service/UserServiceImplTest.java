@@ -2,12 +2,9 @@ package com.junitexercises.ch1_5.service;
 
 import com.junitexercises.ch1_5.dao.UserDAO;
 import com.junitexercises.ch1_5.domain.User;
-import org.junit.Before;
 import org.junit.Test;
 
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 public class UserServiceImplTest {
 
