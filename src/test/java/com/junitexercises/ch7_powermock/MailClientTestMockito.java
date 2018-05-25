@@ -1,14 +1,13 @@
-package com.junitexercises.ch7;
+package com.junitexercises.ch7_powermock;
 
 import org.junit.Test;
 import org.powermock.api.mockito.PowerMockito;
-import org.powermock.core.classloader.annotations.PrepareForTest;
 
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.powermock.api.mockito.PowerMockito.whenNew;
 
-public class MailClientTest {
+public class MailClientTestMockito {
 
     @Test
     public void sendMailTest() throws Exception {
@@ -23,7 +22,7 @@ public class MailClientTest {
 }
 
 class MailClient {
-    public void sendEmal(String address, String title, String body) {
+    public void sendEmail(String address, String title, String body) {
         Email email = new Email(address, title, body);
         EmailServer.sendEmail(email);
     }
