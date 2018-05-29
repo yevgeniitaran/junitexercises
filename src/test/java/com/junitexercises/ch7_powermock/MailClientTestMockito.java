@@ -1,12 +1,15 @@
 package com.junitexercises.ch7_powermock;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.powermock.api.mockito.PowerMockito;
+import org.powermock.modules.junit4.PowerMockRunner;
 
 import static org.mockito.Matchers.eq;
 import static org.mockito.Mockito.mock;
 import static org.powermock.api.mockito.PowerMockito.whenNew;
 
+@RunWith(PowerMockRunner.class)
 public class MailClientTestMockito {
 
     @Test
@@ -15,6 +18,7 @@ public class MailClientTestMockito {
         Email mail = mock(Email.class);
         whenNew(Email.class).withAnyArguments().thenReturn(mail);
         PowerMockito.mockStatic(EmailServer.class);
+        EmailServer.sendEmail(mail);
         PowerMockito.verifyStatic();
         EmailServer.sendEmail(eq(mail));
 

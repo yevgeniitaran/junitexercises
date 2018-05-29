@@ -86,7 +86,7 @@ public class RaceResultServiceEnhancedTest {
         raceResultServiceEnhanced.addSubscriber(clientA, categoryA);
         raceResultServiceEnhanced.send(message, categoryA);
         verify(logger).log(eq(message), argument.capture());
-        assertEquals(argument.getValue().getSecond(), LocalDateTime.now().getSecond());
+        assertEquals(argument.getValue().getMinute(), LocalDateTime.now().getMinute());
         verify(clientA).receive(message);
     }
 
